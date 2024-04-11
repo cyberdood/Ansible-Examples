@@ -1,0 +1,7 @@
+- name: Bounce some boxes
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Box go bounce
+    ansible.builtin.reboot:
